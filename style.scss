@@ -1,0 +1,101 @@
+img{
+    opacity: 0.5;
+    width: 100%;
+}
+#container{
+    display: flex;
+}
+#tomato{
+    background-image: url(/img/Tomato.jpg);
+    background-repeat: no-repeat;
+    background-size:300px 300px;
+    background-position: -40px;
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    border: 3px double red;
+    left: 200px;
+    top: 200px;
+}
+#cucamber{
+    background-image: url(/img/Cucamber.jpg);
+    background-repeat: no-repeat;
+    background-size:300px 300px;
+    background-position:-35px ;
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    border: 3px double green;
+    left: 470px;
+    top: 200px;
+}
+#pepper{
+    background-image: url(/img/Pepper.jfif);
+    background-repeat: no-repeat;
+    background-size:300px 300px;
+    background-position: center;
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    border:3px double rgba(232, 73, 73, 0.767);
+    left: 740px;
+    top: 200px;
+}
+#organic{
+    background-image: url(/img/organicT.jfif);
+    background-repeat: no-repeat;
+    background-size:300px 300px;
+    background-position: center;
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    border: 3px double rgb(255, 0, 149);
+    left: 1000px;
+    top: 200px;
+}
+button{
+    position: relative;
+    width: 200px;
+    height: 60px;
+    bottom: 80px; 
+    font-size: large;
+    font-family:sans-serif; 
+    font-weight: bold;
+    border-radius: 200px;
+    background-color: rgba(144, 129, 243, 0.297);
+}
+#header{
+    position: absolute;
+    left: 500px;
+}
+#foodStore{
+    font-size: larger;
+    font-family:cursive;
+}
+p{
+    position: relative;
+    left: 70px;
+    bottom: 65px;
+    font-size: 20px;
+    font-family:fantasy;
+    text-decoration:underline;
+    
+}
+#organicName{
+    color: rgb(255, 0, 149);
+    left: 35px;
+}
+#cucamberName{
+    color: greenyellow;
+    left: 55px;
+}
+#tomatoName{
+    color:red;
+}
+#pepperName{
+    color:rgb(208, 23, 23) ;
+}
+.price{
+    top: 145px;
+    color: wheat;
+}

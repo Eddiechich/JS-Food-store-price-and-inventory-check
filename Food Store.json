@@ -1,0 +1,104 @@
+{
+  "uuid": "e432a79b-724d-4563-a27d-bafbb75a1802",
+  "lastMigration": 19,
+  "name": "Food Store",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3002,
+  "hostname": "0.0.0.0",
+  "routes": [
+    {
+      "uuid": "9637d7c9-4620-4b8f-9a98-3ce8ce1acc9e",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "Payment",
+      "responses": [
+        {
+          "uuid": "961b7168-674e-4138-aa8f-f316c344b6de",
+          "body": "{\n  \"message\":\"Payment requierd to continue\"\n}",
+          "latency": 0,
+          "statusCode": 402,
+          "label": "",
+          "headers": [],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false
+        }
+      ],
+      "enabled": true,
+      "randomResponse": false,
+      "sequentialResponse": false
+    },
+    {
+      "uuid": "2e4987b9-0fe7-496c-b59f-99a53d04ee31",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "Discount",
+      "responses": [
+        {
+          "uuid": "432a63b3-d838-42dc-93df-13a768642af5",
+          "body": "{\n      \"tProduct\":\"Tomatos\",\n      \"tPrice\":\"10$\",\n      \"tDiscount\":\"50%\",\n      \"tPrice_after\":\"5$\",\n    \n      \"cProduct\":\"Cucambers\",\n      \"cPrice\":\"7$\",\n      \"cDiscount\":\"No discount\",\n    \n      \"pProduct\":\"Peppers\",\n      \"pPrice\":\"15$\",\n      \"pDiscount\":\"No discount\",\n    \n      \"oProduct\":\"Organic tomatos\",\n      \"oPrice\":\"50$\",\n      \"oDiscount\":\"20%\",\n      \"oPrice_after\":\"40$\"\n}\n    \n",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false
+        }
+      ],
+      "enabled": true,
+      "randomResponse": false,
+      "sequentialResponse": false
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    },
+    {
+      "key": "Access-Control-Allow-Origin",
+      "value": "*"
+    },
+    {
+      "key": "Access-Control-Allow-Methods",
+      "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+    },
+    {
+      "key": "Access-Control-Allow-Headers",
+      "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ]
+}
